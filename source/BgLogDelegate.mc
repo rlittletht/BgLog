@@ -2,7 +2,6 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 class BgLogDelegate extends WatchUi.BehaviorDelegate {
-
     function initialize() {
         BehaviorDelegate.initialize();
     }
@@ -12,4 +11,13 @@ class BgLogDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
+    function onLogEntry() {
+        System.println("Log Entry pressed on Home view");
+        return false;
+    }
+
+    function onHistory() {
+        System.println("History pressed on Home view");
+        return false;
+    }
 }

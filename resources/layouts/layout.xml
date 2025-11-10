@@ -2,13 +2,13 @@
    <label x="center" y="15" text="@Strings.AppName" font="Graphics.FONT_MEDIUM" color="Graphics.COLOR_RED" justification="Graphics.TEXT_JUSTIFY_CENTER" />
     <label x="center" y="65" text="@Strings.HomeTitle" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
     <label x="center" y="30%" text="@Strings.Prompt" font="Graphics.FONT_MEDIUM" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <button id="ButtonLogEntry" x="center" y="50%" width="300" height="50" class="WatchUi.Button">
+    <button id="ButtonLogEntry" x="center" y="50%" width="300" height="50" class="WatchUi.Button" behavior="onLogEntry">
         <state id="stateDefault" color="Graphics.COLOR_BLACK" />
         <state id="stateHighlighted" color="Graphics.COLOR_DK_BLUE"  />
         <state id="stateSelected" color="Graphics.COLOR_RED"  />
     </button>>
     <label x="center" y="50%" text="@Strings.LogEntryPrompt" font="Graphics.FONT_SMALL" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <button id="ButtonHistory" x="center" y="65%" width="300" height="50" class="WatchUi.Button">
+    <button id="ButtonHistory" x="center" y="65%" width="300" height="50" class="WatchUi.Button" behavior="onHistory">
         <state id="stateDefault" color="Graphics.COLOR_BLACK" />
         <state id="stateHighlighted" color="Graphics.COLOR_DK_BLUE"  />
         <state id="stateSelected" color="Graphics.COLOR_RED"  />
