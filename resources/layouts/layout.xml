@@ -1,4 +1,17 @@
 <layout id="MainLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <label x="center" y="5" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <bitmap id="id_monkey" x="center" y="30" filename="../drawables/monkey.png" />
+   <label x="center" y="15" text="@Strings.AppName" font="Graphics.FONT_MEDIUM" color="Graphics.COLOR_RED" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label x="center" y="65" text="@Strings.HomeTitle" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label x="center" y="30%" text="@Strings.Prompt" font="Graphics.FONT_MEDIUM" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <button id="ButtonLogEntry" x="center" y="50%" width="300" height="50" class="WatchUi.Button">
+        <state id="stateDefault" color="Graphics.COLOR_BLACK" />
+        <state id="stateHighlighted" color="Graphics.COLOR_DK_BLUE"  />
+        <state id="stateSelected" color="Graphics.COLOR_RED"  />
+    </button>>
+    <label x="center" y="50%" text="@Strings.LogEntryPrompt" font="Graphics.FONT_SMALL" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <button id="ButtonHistory" x="center" y="65%" width="300" height="50" class="WatchUi.Button">
+        <state id="stateDefault" color="Graphics.COLOR_BLACK" />
+        <state id="stateHighlighted" color="Graphics.COLOR_DK_BLUE"  />
+        <state id="stateSelected" color="Graphics.COLOR_RED"  />
+    </button>
+    <label x="center" y="65%" text="@Strings.HistoryPrompt" font="Graphics.FONT_SMALL" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" />
 </layout>
