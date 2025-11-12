@@ -1,5 +1,6 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
+import CIQToolsNumberPicker;
 
 class BgLogDelegate extends WatchUi.BehaviorDelegate {
     function initialize() {
@@ -13,6 +14,8 @@ class BgLogDelegate extends WatchUi.BehaviorDelegate {
 
     function onLogEntry() {
         System.println("Log Entry pressed on Home view");
+        var view = new NumberPicker(null, null);
+        WatchUi.pushView(view, new GenericNumberPickerDelegate(view), WatchUi.SLIDE_LEFT);
         return false;
     }
 
